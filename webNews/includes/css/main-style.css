@@ -1,0 +1,163 @@
+/* BG */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* container */
+.center-container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    margin-bottom: 5px;
+    /* Center the container */
+}
+
+.pages-container {
+    display: flex;
+    justify-content: flex-end; /* Align page numbers to the right */
+    padding: 10px 0; /* Add some padding */
+    margin: 20px auto; /* Add margin to separate from content above */
+    width: 80%; /* Ensure it has the same width as the center container */
+    max-width: 1200px; /* Match the max-width */
+    margin-top: 5px;
+    margin: 0px;
+}
+
+.pages-container a {
+    margin: 0px; /* Space between page numbers */
+    text-decoration: none; /* Remove underline */
+    color: #19191a; /* Link color */
+    padding: 10px; /* Add padding for click area */
+}
+
+.pages-container a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.pages-container a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    /* Or any other styling */
+}
+
+/*container style for title Новости */
+.newsTitle-text {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 2px; /* Increase padding to make container larger */
+    background-color: #3f3f3f; /* Background color for better visibility */
+    color: #fff; /* Text color */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/*text style for title Новости */
+.newsTitle-text p {
+    font-size: 20px; /* Increase font size to 36px */
+    margin: 0; /* Remove default margin if needed */
+}
+
+/* Flex container for info sections */
+.info-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: flex-start; /* Align items to the start */
+    margin: 20px 0; /* Space above and below the info container */
+}
+
+/* info box */
+.info-box {
+    flex: 0 0 30%; /* Set each box to take up 30% of the container */
+    margin: 10px; /* Add uniform margin to create space between boxes */
+    padding: 20px;
+    background-color: #eaeaea;
+    border-radius: 4px;
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text horizontally */
+}
+
+.info-box a {
+    text-decoration: none !important; /* Remove underline from links */
+    color: inherit; /* Inherit color from the parent element */
+}
+
+a {
+    text-decoration: none; /* Remove underline from all links */
+    color: inherit; /* Inherit color */
+}
+
+.info-box a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+    color: #007bff; /* Optional: change color on hover */
+}
+
+.image-container {
+    width: 100%; /* Ensure the image container takes full width */
+    margin-bottom: 10px; /* Space between image and text */
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure image does not overflow container */
+    height: auto;
+    /* Maintain aspect ratio */
+    /* Optional: Set specific width or height if desired */
+    border: 2px solid #333; /* Border around each image */
+    border-radius: 4px; /* Rounded corners for the image border */
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column; /* Stack title and description vertically */
+    align-items: center; /* Center text horizontally */
+    text-align: center; /* Center text horizontally */
+}
+
+.title {
+    font-size: 20px; /* Adjust as needed */
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between title and description */
+}
+
+.description {
+    font-size: 16px; /* Adjust as needed */
+    color: #555; /* Optional: change color for description */
+}
+
+.info-box.left {
+    background-color: #fff; /* left box color */
+}
+
+.info-box.center {
+    background-color: #fff; /* center box color */
+}
+
+.info-box.right {
+    background-color: #fff; /* right box color */
+}
+
+/* Ensure content doesn't overflow */
+.info-box {
+    box-sizing: border-box;
+}/* Info Box Colors */
+.info-box.left,
+.info-box.center,
+.info-box.right {
+    background-color: #fff; /* Set color for all boxes */
+}

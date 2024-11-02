@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f3f3;
+}
+
+.container {
+    margin-top: 20px; /* Increased margin for spacing */
+    margin-bottom: 20px; /* Space below the container */
+    background-color: #ffffff;
+    width: 500%; /* Container width */
+    max-width: 1200px; /* Set a max-width for larger screens */
+    padding: 30px;
+    position: relative; /* Changed from absolute to relative */
+    border-radius: 10px;
+    box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: #ffffff;
+    outline: none;
+    color: #020929;
+}
+
+#save-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3d3f4b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.option-button {
+    height: auto;
+    width: auto;
+    padding: 5px;
+}
+
+select {
+    padding: 7px;
+    border: 1px solid #020929;
+    border-radius: 3px;
+}
+
+.options label,
+.options select {
+    font-family: "Poppins", sans-serif;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #020929;
+}
+
+#text-input {
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    height: 50vh; /* Keeps the container height relative to the viewport height */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.title-input,
+.author-input,
+.desc-input,
+.image-upload {
+    width: 100%;  /* Full width for inputs */
+    margin-bottom: 20px;  /* Space below inputs */
+}
+
+.title-input input,
+.author-input input,
+.desc-input textarea,
+.image-upload input[type="file"] {
+    width: 100%; /* Make inputs take full width */
+    padding: 10px; /* Add some padding */
+    font-size: 18px; /* Increase font size */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.image-upload label {
+    display: block; /* Make label a block element */
+    margin-bottom: 5px; /* Space below the label */
+    font-size: 16px; /* Font size for label */
+}
+
+/* Add this for description textarea */
+.desc-input {
+    margin-bottom: 20px; /* Space below the input */
+}
+
+.desc-input textarea {
+    width: 100%; /* Full width for textarea */
+    padding: 15px; /* Padding for better text visibility */
+    font-size: 18px; /* Keep font size larger for readability */
+    border: 1px solid #ccc; /* Border for textarea */
+    border-radius: 5px; /* Rounded corners */
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 150px; /* Set a minimum height */
+}
+
+.button-container {
+    position: relative;
+    height: 50px; /* Adjust the height as needed */
+    background-color: #f8f9fa; /* Background color */
+    padding: 10px;
+}
+
+/* Left-aligned button (Back to Main) */
+.home-button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #444444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}

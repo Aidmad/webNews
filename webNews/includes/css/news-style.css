@@ -1,0 +1,168 @@
+/* BG */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* title container */
+.title-container {
+    display: flex;
+    justify-content: space-between; /* Space between buttons and title */
+    align-items: center; /* Center align items vertically */
+    width: 80%; /* Set width for the title container */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* title */
+.title {
+    flex-grow: 1; /* Allow title to take remaining space */
+    text-align: center; /* Center text */
+    margin: 0; /* Remove margins */
+}
+/* text size */
+.title p {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Button styles */
+.navigate-button,
+.home-button {
+    background-color: rgb(87, 88, 88); /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px;  /* Padding */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* image container */
+.image {
+    width: 35%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image */
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* news container for text, author and date to align at the center */
+.news {
+    width: 80%;
+    border: 1px solid #c4c4c4; /* border color */
+    border-radius: 10px; /* border size */
+    margin-bottom: 25px; /* distance between this and next div or end of the page */
+}
+
+/* news container only for text, distance from border */
+.news-text {
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+/*text size */
+.news-text p {
+    font-size: 20px;
+}
+
+/* name and date to align */
+.meta-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Adjust as needed */
+    font-size: 18px; /* Optional: adjust font size */
+    color: #555; /* Optional: color for text */
+}
+.author {
+    margin-left: 20px;
+}
+
+.date {
+    margin-right: 15px;
+}
+
+.views-likes {
+    display: flex;
+    justify-content: space-between; /* Aligns views and likes to opposite ends */
+    width: 80%; /* Same width as news section */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.like-button,
+.unlike-button {
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: #f4f4f4; /* Button color */
+    /*color: white; /* Text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+}
+
+.like-button:hover {
+    background-color: #929394; /* Darker button on hover */
+}
+
+.unlike-button:hover {
+    background-color: #929394;
+    /* Darker button on hover */
+}
+
+.likes-count {
+    margin-left: 5px; /* Space between count and button */
+}
+
+.comment-section {
+    width: 80%;
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+    text-align: center; /* Center-align the text */
+    margin-bottom: 20px;
+}
+
+/* input field */
+.comment-section input {
+    width: 80%; /* Increase the width of the input */
+    padding: 15px; /* Increase padding for a larger appearance */
+    margin-right: 5px; /* Keep space between input and button */
+}
+
+.comment-section button {
+    padding: 10px 20px; /* Add padding to the button */
+}
+
+.comments {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.comment {
+    margin: 15px 0;
+    padding: 10px; /* Add padding for better spacing inside the comment */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #f9f9f9; /* Light background for better visibility */
+}
+
+#toggle-comments {
+    margin-bottom: 20px; /* Increase space below the button */
+    padding: 15px 30px; /* Increase padding for a larger button */
+    font-size: 18px; /* Increase font size */
+}
