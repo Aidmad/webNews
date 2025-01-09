@@ -4,4 +4,7 @@
 
 ![Homepage Screenshot](screenshots/main_page.png)
 
+При нажатии на какую-либо статью открывается страница это статьи
+
+![Articlepage Screenshot](screenshots/info_page.png)
 
