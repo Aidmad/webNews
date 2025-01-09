@@ -2,4 +2,4 @@
 
 Главная страница показывает список новостей: титул статьи/новости, титульную картину и описание. Вся информация взята из базы данных.
 
-![Alt text](screenshots/main page.png)
+![Homepage Screenshot](screenshots/homepage.png)
