@@ -4,7 +4,11 @@
 
 ![Homepage Screenshot](screenshots/main_page.png)
 
-При нажатии на какую-либо статью открывается страница это статьи
+Так как можно добавлять безграничное количество страниц существует функция нумерации страниц.
+
+![Pagination Screenshot](screenshots/main_page_page_2.png)
+
+При нажатии на какую-либо статью открывается страница этой статьи.
 
 ![Articlepage Screenshot](screenshots/info_page.png)
 
